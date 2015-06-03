@@ -14,7 +14,7 @@ class FbChannelFileApp
       [
         200,
         { "Pragma" => "public", "Cache-Control" => "max-age=#{60*60*24*365}", "Expires" => CGI.rfc1123_date(1.year.from_now), "Content-Type" => "text/html" },
-        ["<script src='//connect.facebook.net/#{locale}/all.js'></script>"]
+        ["<script src='//connect.facebook.net/#{locale}/sdk.js'></script>"]
       ]
     end
 
